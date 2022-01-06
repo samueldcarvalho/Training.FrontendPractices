@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300;1,700&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #EEEEEE;
+}
+
 body {
     background-color: #010101;
     margin: 0;
@@ -17,6 +23,7 @@ main {
     display: block;
     float: left;
     margin: 20px;
+    transition: 0.1s ease-in-out;
 }
 
 .card {
@@ -36,6 +43,12 @@ main {
     border-radius: 8px;
     display: block;
     margin: 0px auto;
+    transition: 0.1s ease-in-out;
+}
+
+.card img:hover {
+    opacity: 50%;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
 }
 
 .card .card-body {
@@ -45,27 +58,42 @@ main {
 }
 
 .card .card-body h1 {
-    font-family: sans-serif;
     color: #EEEEEE;
     font-weight: bold;
     font-size: medium;
     margin: 10px 0;
 }
 
+.card .card-body p {
+    font-size: 0.9rem;
+    margin: 1.2rem 0;
+    color: #AAAAAA;
+}
 
-/*BOTÕES*/
+.card .card-footer {
+    margin: 15px 0 0 0;
+}
 
 .card .card-footer #btn {
     margin: auto;
     background-color: orangered;
     text-decoration: none;
-    font-family: sans-serif;
     font-weight: bold;
     color: #EEEEEE;
     padding: 10px 30px;
     box-sizing: border-box;
-    display: table;
+    display: block;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55px);
+    text-transform: uppercase;
+    transition: 0.2s ease-in-out;
+}
+
+.card .card-footer #btn:hover {
+    background-color: orange;
+}
+
+#card-img-outside {
+    margin-top: -20%;
 }
