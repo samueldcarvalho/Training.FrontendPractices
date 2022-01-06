@@ -18,6 +18,11 @@ main {
 
 /*CARD DEFINITIONS*/
 
+#card-pocket {
+    display: flex;
+    justify-content: center;
+}
+
 .card-container {
     width: 300px;
     display: block;
@@ -47,8 +52,8 @@ main {
 }
 
 .card img:hover {
-    opacity: 50%;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
+    opacity: 20%;
+    box-shadow: 0px 0px 10px #EEEEEE;
 }
 
 .card .card-body {
@@ -83,15 +88,15 @@ main {
     padding: 10px 30px;
     box-sizing: border-box;
     display: block;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 1.55px);
     text-transform: uppercase;
-    transition: 0.2s ease-in-out;
+    transition: 0.1s ease-in-out;
 }
 
 .card .card-footer #btn:hover {
     background-color: orange;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
 }
 
 #card-img-outside {
