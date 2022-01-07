@@ -1,15 +1,56 @@
-* {
-    font-size: medium;
-}
-
-@media only screen and(min-width: 500px) {
-    h1 {
-        color: red;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300;1,700&display=swap');
+    * {
+        font-family: 'Poppins', sans-serif;
+        color: #EEEEEE;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
     }
-}
-
-@media only screen and(min-width: 300px) {
-    h1 {
-        color: blue;
+    
+    body {
+        background-color: #111111;
     }
-}
+    
+    main {
+        display: block;
+        width: 500px;
+        margin: auto;
+        background-color: #222222;
+        border-radius: 10px;
+        padding: 25px 30px;
+    }
+    
+    #form-body {
+        display: block;
+        margin: 15px 0;
+    }
+    
+    main a {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: larger;
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin-left: 10px;
+    }
+    
+    main #form-footer {
+        display: table;
+        margin-left: auto;
+        transform-origin: 50% 50%;
+    }
+    /* Botões */
+    
+    main #form-footer .btn {
+        background-color: orangered;
+        transition: 0.2s;
+    }
+    
+    main #form-footer .btn:hover {
+        background-color: orange;
+        border-radius: 13px;
+    }
+    
+    main #form-footer .btn-cancelar:hover {
+        background-color: #111111;
+    }
