@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.my-box {
+    background-color: royalblue;
+    height: 100px;
+}
+
+.my-box div {
+    background-color: skyblue;
+    height: 80px;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.my-box .div1 {
+    background-color: greenyellow;
+}
+
+.my-box .div2 {
+    background-color: red;
+}
+
+.my-box .div3 {
+    background-color: purple;
+}
