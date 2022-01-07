@@ -11,13 +11,41 @@
             background-color: #111111;
         }
         
-        main {
-            display: block;
-            width: 500px;
-            margin: auto;
-            background-color: #222222;
-            border-radius: 10px;
-            padding: 25px 30px;
+        @media only screen and (max-width:700px) {
+            main {
+                display: block;
+                width: 100%;
+                margin: auto;
+                background-color: #222222;
+                padding: 25px 30px;
+                transition: 0.4s ease-in-out;
+            }
+        }
+        
+        @media only screen and (min-width:700px) and (max-width:1400px) {
+            main {
+                display: block;
+                width: 60%;
+                border-radius: 10px;
+                margin: auto;
+                background-color: #333333;
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+                padding: 25px 30px;
+                transition: 0.5s;
+            }
+        }
+        
+        @media only screen and (min-width:1400px) {
+            main {
+                display: block;
+                width: 500px;
+                margin: 200px auto;
+                background-color: #222222;
+                border-radius: 10px;
+                padding: 25px 30px;
+                transition: 0.6s ease-in-out;
+                box-shadow: 0px 0px 30px rgba(0, 0, 0, 1);
+            }
         }
         
         main #form-body {
@@ -32,6 +60,7 @@
             border-radius: 10px;
             padding: 5px 15px;
             margin-left: 10px;
+            box-sizing: content-box;
         }
         
         main span {
