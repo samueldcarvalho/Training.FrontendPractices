@@ -5,7 +5,7 @@
 .my-container {
     display: flex;
     background-color: tomato;
-    width: 1000px;
+    width: 1001px;
     height: 400px;
     margin: 60px auto;
     border-radius: 8px;
