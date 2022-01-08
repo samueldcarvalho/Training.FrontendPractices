@@ -22,7 +22,6 @@
 .flex-container:hover{
     box-shadow: 0px 0px 20px #ffff22;
     border-radius: 20px;
-    align-content: space-between;
 }
 
 .my-flex-card{
@@ -31,7 +30,7 @@
     background-color: orangered;
     border-radius: 15px;
     border: solid 4px orange;
-    flex-basis: 20%;
+    flex-basis: 5%;
     transition: 0.1s ;
 }
 
@@ -41,3 +40,11 @@
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     size: 200%;
 }
+
+.grow-1{
+    flex-grow: 5;
+}
+.grow-2{
+    flex-grow: 10;
+}
+
