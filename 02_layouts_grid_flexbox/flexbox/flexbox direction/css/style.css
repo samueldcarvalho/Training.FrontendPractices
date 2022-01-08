@@ -25,6 +25,7 @@
 }
 
 .my-flex-card{
+    align-self: flex-end;
     width: 25px;
     height: 75px;
     background-color: orangered;
@@ -35,6 +36,7 @@
 }
 
 .my-flex-card:hover{
+    align-self: flex-start;
     height: 100px;
     background-color: orange;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
@@ -43,6 +45,7 @@
 
 .grow-1{
     flex-grow: 5;
+    align-self: flex-end;
 }
 .grow-2{
     flex-grow: 10;
