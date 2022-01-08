@@ -6,29 +6,38 @@
 
 .flex-container{
     height: 400px;
-    width: 70%;
+    width: 750px;
     margin: auto;
     margin-top: 100px;
-    padding: 15px;
     border-radius: 10px;
     background-color: tomato;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items:center;
+    align-content: center;
+    transition:0.2s;
+}
+
+.flex-container:hover{
+    box-shadow: 0px 0px 20px #ffff22;
+    border-radius: 20px;
+    align-content: space-between;
 }
 
 .my-flex-card{
-    height: 80px;
+    width: 25px;
+    height: 75px;
     background-color: orangered;
-    margin-inline:10px;
     border-radius: 15px;
-    flex-basis: 15%;
-    transition: 0.3s ease-in-out;
+    border: solid 4px orange;
+    flex-basis: 20%;
+    transition: 0.1s ;
 }
 
 .my-flex-card:hover{
+    height: 100px;
     background-color: orange;
-    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     size: 200%;
 }
