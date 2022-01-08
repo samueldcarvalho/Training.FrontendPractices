@@ -1,0 +1,38 @@
+@keyframes myBoxAnim {
+    from {
+        background-color: aquamarine;
+        width: 200px;
+        height: 200px;
+    }
+    to {
+        background-color: red;
+        width: 400px;
+        height: 100px;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 80%;
+    height: 800px;
+    display: table;
+    background-color: #dadada;
+    margin: 100px auto;
+}
+
+.quadrado {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    transition: all 1s ease-in-out;
+}
+
+.quadrado:active {
+    animation: myBoxAnim 1s forwards;
+}
