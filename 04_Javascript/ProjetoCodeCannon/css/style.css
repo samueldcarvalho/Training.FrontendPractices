@@ -15,24 +15,45 @@
     input:focus {
         outline: none;
     }
-
-    .main-form {
-        position: absolute;
-        padding: 50px;
-        width: 450px;
+    
+    .main-form-presentation {
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-container {
+        width: 700px;
         height: 500px;
         top: 0;
         bottom: 0;
         left: 0;
         right: 0;
         margin: auto;
-        background-color: #222222;
+        position: absolute;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: tomato;
         border-radius: 10px;
+    }
+    
+    .main-form {
+        padding: 50px;
+        width: 375px;
+        height: 500px;
+        background-color: #222222;
+        border-radius: 8px;
         display: flex;
         flex-direction: column;
-        transition: all 0.1s ease-in-out;
+        box-shadow: -5px 0px 15px rgba(0, 0, 0, 0.3);
     }
-
+    
     .main-form .div-main {
         display: flex;
         flex-flow: row wrap;
@@ -45,15 +66,16 @@
     }
     
     .main-form .div-body {
+        align-self: flex-end;
         justify-content: flex-start;
         margin-block: 50px;
     }
     
-    .main-form .div-footer{
+    .main-form .div-footer {
         height: 100%;
     }
-
-    .container{
+    
+    .container {
         margin-top: 5px;
         width: 100%;
         display: flex;
@@ -64,33 +86,31 @@
         align-items: center;
         font-size: 13px;
     }
-
-    .container #remember{
+    
+    .container #remember {
         appearance: none;
         cursor: pointer;
-        margin-left:10px;
+        margin-left: 10px;
         height: 20px;
         width: 20px;
         background-color: transparent;
-        border: solid 3px orangered;
+        border: solid 2px tomato;
         border-radius: 4px;
         transition: all 0.15s ease-in-out;
-        
-    }
-
-    .container #remember:hover{
-        border: 2px solid orange;
-        border-radius: 5px;   
     }
     
-   #remember:checked {
-        background-color: orangered;
-        border: 0px solid orangered    ;
+    .container #remember:hover {
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+    
+    #remember:checked {
+        background-color: tomato;
+        border: 0px solid tomato;
         color: #99a1a7;
         transform: rotate(90deg);
     }
-
-
+    
     .div-main .div-input {
         display: flex;
         flex-direction: column;
@@ -115,7 +135,7 @@
     .btn-main-action {
         letter-spacing: 0px;
         width: 250px;
-        background-color: orangered;
+        background-color: tomato;
         color: white;
         border-radius: 8px;
         padding: 10px 0;
@@ -123,35 +143,32 @@
         text-decoration: 0;
         text-transform: uppercase;
         font-weight: bold;
-        transition: background-color 0.1s ease-in-out;
-        transition: letter-spacing 0.2s ease-in-out;
-        align-self: flex-start;
+        transition: all 150ms ease-in-out;
+        transition-property: border-radius, letter-spacing, background-color, box-shadow;
+        align-self: flex-end;
     }
     
     .btn-main-action:hover {
         font-weight: bolder;
         border-radius: 10px;
-        background-color: orange;
+        background-color: salmon;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         letter-spacing: 1px;
     }
-
-
+    
     @media only screen and (max-width:546px) {
-        body{
+        body {
             background-color: #222222;
         }
-
-        .main-form{
+        .main-form {
             margin-top: auto;
             width: 100%;
             background-color: transparent;
             padding: 40px;
             align-content: center;
         }
-
-        .btn-main-action{
+        .btn-main-action {
             margin-top: 40px;
-            width:100%;
+            width: 100%;
         }
     }
