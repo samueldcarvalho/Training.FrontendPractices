@@ -27,7 +27,7 @@
     }
     
     .main-container {
-        width: 700px;
+        width: 650px;
         height: 500px;
         top: 0;
         bottom: 0;
@@ -37,12 +37,16 @@
         position: absolute;
         display: flex;
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         background-color: tomato;
         border-radius: 10px;
+        transition-property: width, transform;
+        transition: 0.3s ease-out;
     }
+
     
+
     .main-form {
         padding: 50px;
         width: 375px;
@@ -68,7 +72,7 @@
     .main-form .div-body {
         align-self: flex-end;
         justify-content: flex-start;
-        margin-block: 50px;
+        margin-block: 40px;
     }
     
     .main-form .div-footer {
@@ -143,9 +147,9 @@
         text-decoration: 0;
         text-transform: uppercase;
         font-weight: bold;
-        transition: all 150ms ease-in-out;
+        align-self: flex-start;
+        transition: all 100ms ease-in-out;
         transition-property: border-radius, letter-spacing, background-color, box-shadow;
-        align-self: flex-end;
     }
     
     .btn-main-action:hover {
@@ -154,21 +158,43 @@
         background-color: salmon;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         letter-spacing: 1px;
+        transition: all 150ms ease-in-out;
+        transition-property: border-radius, letter-spacing, background-color, box-shadow;
+        }
+
+    .btn-main-action:active {
+        font-weight: bolder;
+        border-radius: 12px;
+        letter-spacing: 0px;    
+        background-color: orangered;
+        box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+        transition: all 50ms ease-in-out;
+        transition-property: border-radius, letter-spacing, background-color, box-shadow;
+        animation: startAnim 2s forwards;
     }
-    
-    @media only screen and (max-width:546px) {
-        body {
-            background-color: #222222;
-        }
-        .main-form {
-            margin-top: auto;
-            width: 100%;
-            background-color: transparent;
-            padding: 40px;
-            align-content: center;
-        }
-        .btn-main-action {
-            margin-top: 40px;
-            width: 100%;
-        }
+
+    .div-footer-signup{
+        padding-bottom: 20px;
+        height: 100%;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: small;
     }
+
+    .div-footer-signup p{
+        color: #AAAAAA;
+    }
+
+    .div-footer-signup a{
+        color: #DDDDDD;
+        letter-spacing: 1px;
+        text-underline-offset: 5px;
+        transition: color 0.1s ease-in-out;
+    }
+
+    .div-footer-signup a:hover{
+        color: #FFFFFF;
+    }
+
