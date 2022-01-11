@@ -39,7 +39,7 @@
         flex-flow: row nowrap;
         justify-content: flex-end;
         align-items: center;
-        background-color: tomato;
+        background-color: #db3b2b;
         border-radius: 10px;
         transition-property: width, transform;
         transition: 0.3s ease-out;
@@ -98,7 +98,7 @@
         height: 20px;
         width: 20px;
         background-color: transparent;
-        border: solid 2px tomato;
+        border: solid 2px #04d464;
         border-radius: 4px;
         transition: all 0.15s ease-in-out;
     }
@@ -109,8 +109,8 @@
     }
     
     #remember:checked {
-        background-color: tomato;
-        border: 0px solid tomato;
+        background-color: #04d464;
+        border: 2px solid transparent;
         color: #99a1a7;
         transform: rotate(90deg);
     }
@@ -139,7 +139,7 @@
     .btn-main-action {
         letter-spacing: 0px;
         width: 250px;
-        background-color: tomato;
+        background-color: #04845c;
         color: white;
         border-radius: 8px;
         padding: 10px 0;
@@ -155,22 +155,37 @@
     .btn-main-action:hover {
         font-weight: bolder;
         border-radius: 10px;
-        background-color: salmon;
+        background-color: #04d464;
         box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
         letter-spacing: 1px;
-        transition: all 150ms ease-in-out;
+        transition: all 100ms ease-in-out;
         transition-property: border-radius, letter-spacing, background-color, box-shadow;
         }
+
+    @keyframes btnClicar{
+        20%{
+            
+        }
+
+        50%{
+            border-radius: 25px;
+            margin-inline: 100px;
+            width: 50px;
+        }
+        90%{
+            border-radius: 25px;
+            margin-inline: 100px;
+            width: 50px; 
+        }
+    }
 
     .btn-main-action:active {
         font-weight: bolder;
         border-radius: 12px;
         letter-spacing: 0px;    
-        background-color: orangered;
+        background-color: #04f575;
         box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
-        transition: all 50ms ease-in-out;
         transition-property: border-radius, letter-spacing, background-color, box-shadow;
-        animation: startAnim 2s forwards;
     }
 
     .div-footer-signup{
